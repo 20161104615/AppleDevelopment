@@ -8,5 +8,25 @@
 
 import Foundation
 
-let someA = [3,4,1,5,6,2]
+var someA:[Int] = [3,4,1,5,6,2]
 
+var length = someA.count
+var i = 0
+var j = 0
+var k = 0
+var swap = 0
+
+
+for i in 0..<length-1{
+    swap = 0
+    for j in 0..<length-i-1{
+        if someA[j] > someA[j+1]{
+            swap = someA[j+1]
+            someA[j+1] = someA[j]
+            someA[j] = swap
+        }
+    }
+}
+for k in 0...length-1{
+    print("\(someA[k])",terminator:" ")
+}
