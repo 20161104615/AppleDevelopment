@@ -17,9 +17,9 @@ var k = 0
 var swap = 0
 
 
-for i in 0..<length-1{
+for i in 0...length-2{
     swap = 0
-    for j in 0..<length-i-1{
+    for j in 0...length-i-2{
         if someA[j] > someA[j+1]{
             swap = someA[j+1]
             someA[j+1] = someA[j]
