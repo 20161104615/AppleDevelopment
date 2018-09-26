@@ -36,6 +36,9 @@
                                 <rect key="frame" x="128" y="177" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="key_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHU-kR-czj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL2-n7-T5R">
                                 <rect key="frame" x="214" y="177" width="30" height="30"/>
@@ -94,9 +97,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R48-yD-Nri">
-                                <rect key="frame" x="45" y="306" width="36" height="30"/>
+                                <rect key="frame" x="48" y="306" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clear"/>
+                                <state key="normal" title="C"/>
                                 <connections>
                                     <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbW-Vv-uyZ"/>
                                 </connections>
@@ -136,7 +139,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-gf-NjC">
                                 <rect key="frame" x="299" y="306" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="%"/>
+                                <state key="normal" title="/"/>
                                 <connections>
                                     <action selector="Except:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Mf-iG-cML"/>
                                 </connections>

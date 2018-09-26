@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     var Num9 = Int()
     var Num0 = Int()
     var Sum = Int()
+    
     @IBOutlet weak var Result: UITextField!
     
     @IBAction func key_1(_ sender: Any) {
@@ -68,7 +69,8 @@ class ViewController: UIViewController {
         Result.text = "\(Sum)"
     }
     @IBAction func Add(_ sender: Any) {
-        Sum = Num4 + Num5
+        
+        
     }
     @IBAction func Minus(_ sender: Any) {
     }
