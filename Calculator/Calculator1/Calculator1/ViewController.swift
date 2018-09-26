@@ -11,32 +11,27 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBAction func Key1(_ sender: Any) {
-    }
-    @IBAction func Key2(_ sender: Any) {
-    }
-    @IBAction func Key3(_ sender: Any) {
-    }
-    @IBAction func Key4(_ sender: Any) {
-    }
-    @IBAction func Key5(_ sender: Any) {
-    }
-    @IBAction func Key6(_ sender: Any) {
-    }
-    @IBAction func Key7(_ sender: Any) {
-    }
-    @IBAction func Key8(_ sender: Any) {
-    }
-    @IBAction func Key9(_ sender: Any) {
-    }
-    @IBAction func Key0(_ sender: Any) {
-    }
+    @IBOutlet weak var Result: UITextField!
+    @IBOutlet weak var key_1: UIButton!
+    @IBOutlet weak var key_2: UIButton!
+
     @IBAction func Equal(_ sender: Any) {
     }
     @IBAction func Add(_ sender: Any) {
+       Result.text = "\(Int(key_1.text!) + Int(key_2.text!))"
+       
     }
     @IBAction func Minus(_ sender: Any) {
     }
+    @IBAction func Ride(_ sender: Any) {
+    }
+    @IBAction func Except(_ sender: Any) {
+    }
+    @IBAction func Clear(_ sender: Any) {
+    }
+    
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
