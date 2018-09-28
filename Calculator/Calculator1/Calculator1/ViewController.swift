@@ -12,16 +12,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Result: UITextField!
     var DisplayWindowAcknowledgement = false//表示是否是第一次输入数字
+    var number1 = Int()
+    var number2 = Int()
     @IBAction func key(sender : AnyObject) {
         let key = sender.currentTitle
-        if (DisplayWindowAcknowledgement){
-            Result.text = Result.text! + key!!
-        } else{
-            Result.text = key!
-            if (key != "0"){
-                DisplayWindowAcknowledgement = true
-            }
+        Result.text = Result.text! + key!!
+        //获取运算符之前的数字
+        if (key!! == "+"){
+            number1 = Int(Result.text!)!
         }
+        if (key!! == "-"){
+            number1 = Int(Result.text!)!
+        }
+        if (key!! == "*"){
+            number1 = Int(Result.text!)!
+        }
+        if (key!! == "/"){
+            number1 = Int(Result.text!)!
+        }
+        
+        
     }
     
     
