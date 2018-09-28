@@ -16,24 +16,28 @@ class ViewController: UIViewController {
     var number2 = Int()
     @IBAction func key(sender : AnyObject) {
         let key = sender.currentTitle
-        Result.text = Result.text! + key!!
-        //获取运算符之前的数字
-        if (key!! == "+"){
-            number1 = Int(Result.text!)!
+        if (key!! == "C"){
+            Result.text = "NSNull"
+        } else {
+            
+            //获取运算符之前的数字
+            //        if (key!! == "+"){
+            //            number1 = Int(Result.text!)!
+            //        }
+            //        if (key!! == "-"){
+            //            number1 = Int(Result.text!)!
+            //        }
+            //        if (key!! == "*"){
+            //            number1 = Int(Result.text!)!
+            //        }
+            //        if (key!! == "/"){
+            //            number1 = Int(Result.text!)!
+            //        }
+            
+            
+            Result.text = Result.text! + key!!
         }
-        if (key!! == "-"){
-            number1 = Int(Result.text!)!
-        }
-        if (key!! == "*"){
-            number1 = Int(Result.text!)!
-        }
-        if (key!! == "/"){
-            number1 = Int(Result.text!)!
-        }
-        
-        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
