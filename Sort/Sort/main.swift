@@ -6,27 +6,37 @@
 //  Copyright © 2018年 20161104615. All rights reserved.
 //
 
-import Foundation
+//import Foundation
+//
+//var someA:[Int] = [3,4,1,5,6,2]
+//
+//var length = someA.count
+//var i = 0
+//var j = 0
+//var k = 0
+//var swap = 0
+//
+//
+//for i in 0...length-2{
+//    swap = 0
+//    for j in 0...length-i-2{
+//        if someA[j] > someA[j+1]{
+//            swap = someA[j+1]
+//            someA[j+1] = someA[j]
+//            someA[j] = swap
+//        }
+//    }
+//}
+//for k in 0...length-1{
+//    print("\(someA[k])",terminator:" ")
+//}
 
-var someA:[Int] = [3,4,1,5,6,2]
+import Cocoa
+let name = [1, 2, 3, 4]
+//func NS(s1:Int , s2:Int) -> Bool {
+//    return s1 > s2
+//}
+var new = name.sorted(by:>)
+print(new)
 
-var length = someA.count
-var i = 0
-var j = 0
-var k = 0
-var swap = 0
 
-
-for i in 0...length-2{
-    swap = 0
-    for j in 0...length-i-2{
-        if someA[j] > someA[j+1]{
-            swap = someA[j+1]
-            someA[j+1] = someA[j]
-            someA[j] = swap
-        }
-    }
-}
-for k in 0...length-1{
-    print("\(someA[k])",terminator:" ")
-}
