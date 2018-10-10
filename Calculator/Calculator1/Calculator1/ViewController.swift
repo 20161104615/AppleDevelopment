@@ -10,34 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var Result: UITextField!
-    var DisplayWindowAcknowledgement = false//表示是否是第一次输入数字
     var number1 = Int()
     var number2 = Int()
-    @IBAction func key(sender : AnyObject) {
+    
+    
+    @IBOutlet weak var display: UILabel!
+    
+    
+    
+    var DisplayWindowAcknowledgement = false//表示是否是第一次输入数字
+    
+    
+    
+    
+    
+    
+    @IBAction func key(_ sender: UIButton) {
         let key = sender.currentTitle
-        if (key!! == "C"){
-            Result.text = "NSNull"
+        if DisplayWindowAcknowledgement{
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + key!
         } else {
-            
-            //获取运算符之前的数字
-            //        if (key!! == "+"){
-            //            number1 = Int(Result.text!)!
-            //        }
-            //        if (key!! == "-"){
-            //            number1 = Int(Result.text!)!
-            //        }
-            //        if (key!! == "*"){
-            //            number1 = Int(Result.text!)!
-            //        }
-            //        if (key!! == "/"){
-            //            number1 = Int(Result.text!)!
-            //        }
-            
-            
-            Result.text = Result.text! + key!!
+            display.text = key
+            DisplayWindowAcknowledgement = true
         }
+        
     }
+    @IBAction func Sum(_ sender: UIButton) {
+        let s1 = sender.currentTitle
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
