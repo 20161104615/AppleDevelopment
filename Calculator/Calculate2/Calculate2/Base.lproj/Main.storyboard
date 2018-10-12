@@ -186,7 +186,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Calculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTa-Mj-7O2"/>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeX-9g-G0Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjJ-67-0EH">
@@ -198,7 +198,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Calculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eI-ie-G7o"/>
+                                    <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5F-ZP-1CI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoH-we-dsc">
@@ -210,7 +210,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Calculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="02O-B4-ifW"/>
+                                    <action selector="ride:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NtP-UN-7mZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHg-r2-MNV">
@@ -222,7 +222,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Calculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZf-D3-gq5"/>
+                                    <action selector="except:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nah-wf-Kba"/>
                                 </connections>
                             </button>
                         </subviews>
