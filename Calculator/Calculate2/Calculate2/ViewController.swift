@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    var n1 = Int()
-    var n2 = Int()
+    var n1 = Double()
+    var n2 = Double()
     var logo = String()
+    var count = 0
 
     @IBOutlet weak var display: UILabel!
     
@@ -31,30 +32,39 @@ class ViewController: UIViewController {
     }
     
     @IBAction func add(_ sender: UIButton) {
-        n1 = Int(display.text!)!
-        display.text = ""
-        logo = "+"
+        if (count >= 0){
+            n1 = Double(display.text!)!
+            display.text = ""
+            logo = "+"
+            
+        } else{
+            n1 = Double(display.text!)!
+            display.text = ""
+            logo = "+"
+            
+        }
+        
     }
     
     @IBAction func minus(_ sender: UIButton) {
-        n1 = Int(display.text!)!
+        n1 = Double(display.text!)!
         display.text = ""
         logo = "-"
     }
     
     @IBAction func ride(_ sender: UIButton) {
-        n1 = Int(display.text!)!
+        n1 = Double(display.text!)!
         display.text = ""
         logo = "*"
     }
     
     @IBAction func except(_ sender: UIButton) {
-        n1 = Int(display.text!)!
+        n1 = Double(display.text!)!
         display.text = ""
         logo = "/"
     }
     @IBAction func Calculator(_ sender: UIButton) {
-        n2 = Int(display.text!)!
+        n2 = Double(display.text!)!
         switch logo {
         case "+":
             display.text = String((n1 + n2))
@@ -67,6 +77,13 @@ class ViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    @IBAction func clear(_ sender: UIButton) {
+        n1 = 0
+        n2 = 0
+        logo = ""
+        display.text = ""
     }
     
     

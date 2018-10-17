@@ -17,11 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrd-Cm-1Xe">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrd-Cm-1Xe">
                                 <rect key="frame" x="45" y="174" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="1"/>
+                                <state key="normal" title="1" image="1.jpg"/>
                                 <connections>
                                     <action selector="keyWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5NL-qv-HkA"/>
                                 </connections>
@@ -58,10 +57,10 @@
                                     <action selector="keyWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPi-Ye-AJ0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkI-Lc-I5D">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkI-Lc-I5D">
                                 <rect key="frame" x="45" y="265" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="7"/>
+                                <state key="normal" title="7" image="7.jpg"/>
                                 <connections>
                                     <action selector="keyWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLL-Y7-IIe"/>
                                 </connections>
@@ -135,7 +134,7 @@
                                 <state key="normal" title="/"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-xf-pWN">
-                                <rect key="frame" x="45" y="113" width="284" height="36"/>
+                                <rect key="frame" x="45" y="106" width="284" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86595513300000004" green="0.99374394919999998" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -155,4 +154,8 @@
             <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.jpg" width="233" height="469"/>
+        <image name="7.jpg" width="354" height="509"/>
+    </resources>
 </document>

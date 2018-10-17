@@ -14,6 +14,7 @@
 		5FB83E58216DA35200136502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB83E56216DA35200136502 /* LaunchScreen.storyboard */; };
 		5FB83E63216DA35200136502 /* Calculate2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB83E62216DA35200136502 /* Calculate2Tests.swift */; };
 		5FB83E6E216DA35200136502 /* Calculate2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB83E6D216DA35200136502 /* Calculate2UITests.swift */; };
+		5FBFBE092176D925004EC2DD /* Photo in Resources */ = {isa = PBXBuildFile; fileRef = 5FBFBE082176D925004EC2DD /* Photo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5FB83E69216DA35200136502 /* Calculate2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Calculate2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB83E6D216DA35200136502 /* Calculate2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate2UITests.swift; sourceTree = "<group>"; };
 		5FB83E6F216DA35200136502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBFBE082176D925004EC2DD /* Photo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Photo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		5FB83E4C216DA35000136502 /* Calculate2 */ = {
 			isa = PBXGroup;
 			children = (
+				5FBFBE082176D925004EC2DD /* Photo */,
 				5FB83E4D216DA35000136502 /* AppDelegate.swift */,
 				5FB83E4F216DA35000136502 /* ViewController.swift */,
 				5FB83E51216DA35000136502 /* Main.storyboard */,
@@ -232,6 +235,7 @@
 				5FB83E58216DA35200136502 /* LaunchScreen.storyboard in Resources */,
 				5FB83E55216DA35200136502 /* Assets.xcassets in Resources */,
 				5FB83E53216DA35000136502 /* Main.storyboard in Resources */,
+				5FBFBE092176D925004EC2DD /* Photo in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
