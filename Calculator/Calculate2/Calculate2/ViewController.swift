@@ -118,6 +118,8 @@ class ViewController: UIViewController {
                 display.text = String(Double.pi * n1)
             case "√":
                 display.text = String(sqrt(n1))
+            case "X²":
+                display.text = String(n1 * n1)
             default:
                 break
             }
