@@ -115,7 +115,7 @@ class ViewController: UIViewController {
         if let digit = sender.currentTitle{
             switch digit{
             case "π":
-                display.text = String(Double.pi)
+                display.text = String(Double.pi * n1)
             case "√":
                 display.text = String(sqrt(n1))
             default:
