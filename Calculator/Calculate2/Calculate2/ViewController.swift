@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
     var n1 = Double()
     var n2 = Double()
     var logo = String()
@@ -18,9 +16,7 @@ class ViewController: UIViewController {
     var CountMinus = 0
     var CountRide = 0
     var CountExcept = 0
-
     @IBOutlet weak var display: UILabel!
-    
     var FirstTime = false//判断当前是否为0
     
     @IBAction func key(_ sender: UIButton) {
@@ -33,7 +29,6 @@ class ViewController: UIViewController {
             FirstTime = true
         }
     }
-    
     @IBAction func add(_ sender: UIButton) {
         if (CountAdd == 0){
             n1 = Double(display.text!)!
@@ -48,7 +43,6 @@ class ViewController: UIViewController {
             CountAdd += 1
         }
     }
-    
     @IBAction func minus(_ sender: UIButton) {
         if (CountMinus == 0){
             n1 = Double(display.text!)!
@@ -63,7 +57,6 @@ class ViewController: UIViewController {
             CountMinus += 1
         }
     }
-    
     @IBAction func ride(_ sender: UIButton) {
         if (CountRide == 0){
             n1 = Double(display.text!)!
@@ -78,7 +71,6 @@ class ViewController: UIViewController {
             CountRide += 1
         }
     }
-    
     @IBAction func except(_ sender: UIButton) {
         if (CountExcept == 0){
             n1 = Double(display.text!)!
@@ -108,7 +100,6 @@ class ViewController: UIViewController {
             break
         }
     }
-    
     @IBAction func clear(_ sender: UIButton) {
         n1 = 0
         n2 = 0
@@ -118,6 +109,22 @@ class ViewController: UIViewController {
         CountRide = 0
         CountExcept = 0
         display.text = ""
+    }
+    @IBAction func square(_ sender: UIButton) {
+        n1 = Double(display.text!)!
+        if let digit = sender.currentTitle{
+            switch digit{
+            case "π":
+                display.text = String(Double.pi)
+            case "√":
+                display.text = String(sqrt(n1))
+            default:
+                break
+            }
+            
+        }
+        
+        
     }
     
     
