@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     var n1 = Double()
     var n2 = Double()
+    var Result = Double()
     var logo = String()
+    var s = String()//结果String类型
     var CountAdd = 0
     var CountMinus = 0
     var CountRide = 0
@@ -19,7 +21,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     var FirstTime = false//判断当前是否为0
     
+//    func check (result : Double) -> Double{
+//        var s = String(result)
+//        if (
+//
+//        return result
+//    }
+    
     @IBAction func key(_ sender: UIButton) {
+//        if display.text == "0"{
+//            display.text = ""
+//        }
         let digit = sender.currentTitle
         if FirstTime{
             let textCurrent = display.text!
@@ -89,16 +101,52 @@ class ViewController: UIViewController {
         n2 = Double(display.text!)!
         switch logo {
         case "+":
-            display.text = String((n1 + n2))
+            Result = n1 + n2
+            s = String(Result)
+            while (s.last == "0") {
+                s.removeLast()//删除最后意味
+            }
+            if (s.last == "."){
+                s.removeLast()
+            }
+            display.text = s
         case "-":
-            display.text = String((n1 - n2))
+            Result = n1 - n2
+            s = String(Result)
+            while (s.last == "0") {
+                s.removeLast()//删除最后意味
+            }
+            if (s.last == "."){
+                s.removeLast()
+            }
+            display.text = s
         case "*":
-            display.text = String((n1 * n2))
+            Result = n1 * n2
+            s = String(Result)
+            while (s.last == "0") {
+                s.removeLast()//删除最后意味
+            }
+            if (s.last == "."){
+                s.removeLast()
+            }
+            display.text = s
         case "/":
-            display.text = String((n1 / n2))
+            Result = n1 / n2
+            s = String(Result)
+            while (s.last == "0") {
+                s.removeLast()//删除最后意味
+            }
+            if (s.last == "."){
+                s.removeLast()
+            }
+            display.text = s
         default:
             break
         }
+        CountAdd = 0
+        CountMinus = 0
+        CountRide = 0
+        CountExcept = 0
     }
     @IBAction func clear(_ sender: UIButton) {
         n1 = 0
@@ -108,7 +156,8 @@ class ViewController: UIViewController {
         CountMinus = 0
         CountRide = 0
         CountExcept = 0
-        display.text = ""
+        display.text = "0"
+        FirstTime = false
     }
     @IBAction func square(_ sender: UIButton) {
         n1 = Double(display.text!)!
@@ -123,13 +172,8 @@ class ViewController: UIViewController {
             default:
                 break
             }
-            
         }
-        
-        
     }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
