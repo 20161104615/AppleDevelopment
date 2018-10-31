@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var Result = Double()
     var logo = String()
     var s = String()//结果String类型
+    var PointCount = 0
     var CountAdd = 0
     var CountMinus = 0
     var CountRide = 0
@@ -21,17 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     var FirstTime = false//判断当前是否为0
     
-//    func check (result : Double) -> Double{
-//        var s = String(result)
-//        if (
-//
-//        return result
-//    }
-    
     @IBAction func key(_ sender: UIButton) {
-//        if display.text == "0"{
-//            display.text = ""
-//        }
         let digit = sender.currentTitle
         if FirstTime{
             let textCurrent = display.text!
@@ -41,7 +32,17 @@ class ViewController: UIViewController {
             FirstTime = true
         }
     }
+    @IBAction func point(_ sender: UIButton) {
+        PointCount += 1
+        let digit = sender.currentTitle
+        let textCurrent = display.text!
+        if (PointCount <= 1){
+            display.text = textCurrent + digit!
+            FirstTime = true
+        }
+    }
     @IBAction func add(_ sender: UIButton) {
+        PointCount = 0
         if (CountAdd == 0){
             n1 = Double(display.text!)!
             display.text = ""
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func minus(_ sender: UIButton) {
+        PointCount = 0
         if (CountMinus == 0){
             n1 = Double(display.text!)!
             display.text = ""
@@ -70,6 +72,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func ride(_ sender: UIButton) {
+        PointCount = 0
         if (CountRide == 0){
             n1 = Double(display.text!)!
             display.text = ""
@@ -84,6 +87,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func except(_ sender: UIButton) {
+        PointCount = 0
         if (CountExcept == 0){
             n1 = Double(display.text!)!
             display.text = ""
@@ -98,6 +102,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func Calculator(_ sender: UIButton) {
+        PointCount = 0
         n2 = Double(display.text!)!
         switch logo {
         case "+":
@@ -110,6 +115,9 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = s
+            if (s == "0"){
+                FirstTime = false
+            }
         case "-":
             Result = n1 - n2
             s = String(Result)
@@ -120,6 +128,9 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = s
+            if (s == "0"){
+                FirstTime = false
+            }
         case "*":
             Result = n1 * n2
             s = String(Result)
@@ -130,6 +141,9 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = s
+            if (s == "0"){
+                FirstTime = false
+            }
         case "/":
             Result = n1 / n2
             s = String(Result)
@@ -140,6 +154,9 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = s
+            if (s == "0"){
+                FirstTime = false
+            }
         default:
             break
         }
@@ -147,6 +164,7 @@ class ViewController: UIViewController {
         CountMinus = 0
         CountRide = 0
         CountExcept = 0
+        PointCount = 0
     }
     @IBAction func clear(_ sender: UIButton) {
         n1 = 0
@@ -156,6 +174,7 @@ class ViewController: UIViewController {
         CountMinus = 0
         CountRide = 0
         CountExcept = 0
+        PointCount = 0
         display.text = "0"
         FirstTime = false
     }
