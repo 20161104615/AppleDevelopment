@@ -8,17 +8,19 @@
 
 import UIKit
 
-
-struct SqStack {
-    var top = MevcmoryLayout<Double>.self
-    var
+struct <#name#> {
+    <#fields#>
 }
 
+
+
+
 class ViewController: UIViewController {
-    var myStack = stack_t()
+    
+    @IBOutlet weak var test: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
-

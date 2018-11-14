@@ -14,17 +14,17 @@ class ViewController: UIViewController {
     var Result = Double()
     var logo = String()
     var s = String()//结果String类型
-    var PointCount = 0
-    var CountAdd = 0
-    var CountMinus = 0
-    var CountRide = 0
-    var CountExcept = 0
+    var PointCount = 0//小数点个数
+    var CountAdd = 0//记录相加次数
+    var CountMinus = 0//记录相减次数
+    var CountRide = 0//记录相乘次数
+    var CountExcept = 0//记录相除次数
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var Display2: UILabel!
-    var FirstTime = false//判断当前是否为0
+    var FirstTime = false//判断当前是否是第一次输入
     
     @IBAction func key(_ sender: UIButton) {
-        let digit = sender.currentTitle
+        let digit = sender.currentTitle//用来获取当前按钮的标题
         if FirstTime{
             let textCurrent = display.text!
             display.text = textCurrent + digit!
