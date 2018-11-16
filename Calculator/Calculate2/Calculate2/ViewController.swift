@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     var n1 = Double()
     var n2 = Double()
+    var STR_1 = String()
+    var STR_2 = String()
     var Result = Double()
     var logo = String()
     var s = String()//结果String类型
@@ -46,15 +48,29 @@ class ViewController: UIViewController {
         PointCount = 0
         if (CountAdd == 0){
             n1 = Double(display.text!)!
+            STR_1 = String(n1)
             display.text = ""
-            Display2.text = String(n1)//显示到Display2中
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = STR_1//显示到Display2中
             logo = "+"
             CountAdd += 1
         }
         else{
             let d2 = Display2.text
             n1 += Double(display.text!)!
-            Display2.text = d2! + "+" + String(Double(display.text!)!)
+            STR_1 = String(Double(display.text!)!)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = d2! + "+" + STR_1
             display.text = ""
             logo = "+"
             CountAdd += 1
@@ -64,15 +80,29 @@ class ViewController: UIViewController {
         PointCount = 0
         if (CountMinus == 0){
             n1 = Double(display.text!)!
+            STR_1 = String(n1)
             display.text = ""
-            Display2.text = String(n1)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = STR_1
             logo = "-"
             CountMinus += 1
         }
         else{
             let d2 = Display2.text
             n1 -= Double(display.text!)!
-            Display2.text = d2! + "-" + String(Double(display.text!)!)
+            STR_1 = String(Double(display.text!)!)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = d2! + "-" + STR_1
             display.text = ""
             logo = "-"
             CountMinus += 1
@@ -82,15 +112,29 @@ class ViewController: UIViewController {
         PointCount = 0
         if (CountRide == 0){
             n1 = Double(display.text!)!
+            STR_1 = String(n1)
             display.text = ""
-            Display2.text = String(n1)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = STR_1
             logo = "*"
             CountRide += 1
         }
         else{
             let d2 = Display2.text
             n1 *= Double(display.text!)!
-            Display2.text = d2! + "✖️" + String(Double(display.text!)!)
+            STR_1 = String(Double(display.text!)!)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = d2! + "✖️" + STR_1
             display.text = ""
             logo = "*"
             CountRide += 1
@@ -100,15 +144,29 @@ class ViewController: UIViewController {
         PointCount = 0
         if (CountExcept == 0){
             n1 = Double(display.text!)!
+            STR_1 = String(n1)
             display.text = ""
-            Display2.text = String(n1)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = STR_1
             logo = "/"
             CountExcept += 1
         }
         else{
             let d2 = Display2.text
             n1 /= Double(display.text!)!
-            Display2.text = d2! + "➗" + String(Double(display.text!)!)
+            STR_1 = String(Double(display.text!)!)
+            while (STR_1.last == "0"){
+                STR_1.removeLast()
+            }
+            if (STR_1.last == "."){
+                STR_1.removeLast()
+            }
+            Display2.text = d2! + "➗" + STR_1
             display.text = ""
             logo = "/"
             CountExcept += 1
@@ -118,6 +176,13 @@ class ViewController: UIViewController {
         let d2 = Display2.text
         PointCount = 0
         n2 = Double(display.text!)!
+        STR_2 = String(n2)
+        while (STR_2.last == "0"){
+            STR_2.removeLast()
+        }
+        if (STR_2.last == "."){
+            STR_2.removeLast()
+        }
         switch logo {
         case "+":
             Result = n1 + n2
@@ -129,7 +194,7 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = ""
-            Display2.text = d2! + "+" + String(n2) + "=" + s
+            Display2.text = d2! + "+" + STR_2 + "=" + s
             if (s == "0"){
                 FirstTime = false
             }
@@ -143,7 +208,7 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = ""
-            Display2.text = d2! + "-" + String(n2) + "=" + s
+            Display2.text = d2! + "-" + STR_2 + "=" + s
             if (s == "0"){
                 FirstTime = false
             }
@@ -157,7 +222,7 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = ""
-            Display2.text = d2! + "✖️" + String(n2) + "=" + s
+            Display2.text = d2! + "✖️" + STR_2 + "=" + s
             if (s == "0"){
                 FirstTime = false
             }
@@ -171,7 +236,7 @@ class ViewController: UIViewController {
                 s.removeLast()
             }
             display.text = ""
-            Display2.text = d2! + "➗" + String(n2) + "=" + s
+            Display2.text = d2! + "➗" + STR_2 + "=" + s
             if (s == "0"){
                 FirstTime = false
             }
@@ -196,6 +261,8 @@ class ViewController: UIViewController {
         display.text = "0"
         FirstTime = false
         Display2.text = ""
+        STR_1 = ""
+        STR_2 = ""
     }
     @IBAction func square(_ sender: UIButton) {
         n1 = Double(display.text!)!
