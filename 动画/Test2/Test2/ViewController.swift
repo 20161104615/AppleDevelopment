@@ -8,13 +8,6 @@
 
 import UIKit
 
-struct <#name#> {
-    <#fields#>
-}
-
-
-
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var test: UILabel!
