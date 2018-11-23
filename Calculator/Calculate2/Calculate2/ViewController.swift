@@ -63,6 +63,7 @@ class ViewController: UIViewController {
         else{
             let d2 = Display2.text
             n1 += Double(display.text!)!
+            print(n1)
             STR_1 = String(Double(display.text!)!)
             while (STR_1.last == "0"){
                 STR_1.removeLast()

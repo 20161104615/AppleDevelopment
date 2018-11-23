@@ -1,15 +1,15 @@
 //
-//  Test2Tests.swift
-//  Test2Tests
+//  Test12Tests.swift
+//  Test12Tests
 //
-//  Created by 20161104615 on 2018/11/2.
+//  Created by 20161104615 on 2018/11/21.
 //  Copyright © 2018 20161104615. All rights reserved.
 //
 
 import XCTest
-@testable import Test2
+@testable import Test12
 
-class Test2Tests: XCTestCase {
+class Test12Tests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,14 +1,14 @@
 //
-//  Test2UITests.swift
-//  Test2UITests
+//  Test12UITests.swift
+//  Test12UITests
 //
-//  Created by 20161104615 on 2018/11/2.
+//  Created by 20161104615 on 2018/11/21.
 //  Copyright © 2018 20161104615. All rights reserved.
 //
 
 import XCTest
 
-class Test2UITests: XCTestCase {
+class Test12UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
