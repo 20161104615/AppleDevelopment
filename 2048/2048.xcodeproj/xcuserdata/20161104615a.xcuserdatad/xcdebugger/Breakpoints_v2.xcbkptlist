@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2048/Model/Game.swift"
-            timestampString = "566882486.888194"
+            timestampString = "566991502.047282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "move(_:)"
+            landmarkName = "move(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,44 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2048/Model/Game.swift"
-            timestampString = "566882486.888532"
+            timestampString = "566991502.047385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "152"
             endingLineNumber = "152"
-            landmarkName = "Game"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "2048/Model/Game.swift"
-            timestampString = "566882526.511049"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "2048/Model/Game.swift"
-            timestampString = "566882529.646778"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "debugPrint()"
+            landmarkName = "checkFailure()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +42,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2048/Model/Game.swift"
-            timestampString = "566882578.31528"
+            timestampString = "566991502.047436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "checkFailure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2048/Model/Game.swift"
+            timestampString = "566991502.0474809"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "checkFailure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2048/Model/Game.swift"
+            timestampString = "566991502.047524"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
             endingLineNumber = "146"
-            landmarkName = "debugPrint()"
+            landmarkName = "move(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

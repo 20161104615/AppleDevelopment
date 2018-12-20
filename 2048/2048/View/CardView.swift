@@ -34,13 +34,13 @@ class CardView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     func updateValue(to newValue: Int){
         value = newValue
     }
-    
+//    初次调用
     private func set(value:Int){
         label.textAlignment = .center
         label.font  = UIFont.boldSystemFont(ofSize: 38.0)
@@ -57,5 +57,32 @@ class CardView: UIView {
         ])
         
         updateValue(to: value)
+    }
+    
+    func creatAnimation() {
+        transform = CGAffineTransform.identity.scaledBy(x: 0.1, y: 0.1)
+        UIViewPropertyAnimator.runningPropertyAnimator(
+            withDuration: 0.1,
+            delay: 0.0,
+            options: [],
+            animations: {
+                self.transform = .identity
+            }
+        )
+    }
+    
+    func flash(withValue value : Int = 0){
+        transform = CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8)
+        updateValue(to: value)
+        UIViewPropertyAnimator.runningPropertyAnimator(
+            withDuration: 0.08,
+            delay: 0.0,
+            options: [.repeat],
+            animations: {
+                self.transform = CGAffineTransform.identity.scaledBy(x: 1.1, y: 1.1)
+            }
+        ) { position in
+            self.transform = .identity
+        }
     }
 }
