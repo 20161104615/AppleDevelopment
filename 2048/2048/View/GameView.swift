@@ -20,14 +20,17 @@ class GameView: UIView {
     private var startLocation = CGPoint()
     private var touchingDetectable = true
     
+//    绘图
     private var drawBound: CGRect {
         var bound = self.bounds
         bound.origin.x += margin
+        bound.origin.y += margin
         bound.size.width -= margin * 2
         bound.size.height -= margin * 2
         return bound
     }
 
+    
     private var boundSize: CGFloat {
         let viewWidth = drawBound.size.width
         return viewWidth / CGFloat(size)
@@ -36,6 +39,7 @@ class GameView: UIView {
     private var cardSize: CGSize {
         return CGSize(width: boundSize - margin * 2, height: boundSize - margin * 2)
     }
+    
     
     private func getRectOF(row: Int, col: Int) -> CGRect {
         var location = CGPoint(x: CGFloat(col) * boundSize, y: CGFloat(row) * boundSize)
@@ -54,8 +58,8 @@ class GameView: UIView {
         }
     }
     
-    func performAations(_ action: [Action]) {
-        for action in action {
+    func performAations(_ actions: [Action]) {
+        for action in actions {
             switch action {
             case .new(let position, let newValue):
                 newCard(at: position, withValue: newValue)
@@ -100,7 +104,7 @@ class GameView: UIView {
                     cardView.frame = self.getRectOF(row: to.row, col: to.col)
                     cardView.tag = self.tag(at: to)
                 }
-        }) { Position in
+        }) { position in
             completion?()
         }
     }
@@ -150,7 +154,7 @@ class GameView: UIView {
 }
 
 extension CGPoint{
-    public static func - (Ihs: CGPoint, rhs: CGPoint) -> CGPoint {
-        return CGPoint(x: Ihs.x - rhs.x , y: Ihs.y - rhs.y)
+    public static func -(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
+        return CGPoint(x: lhs.x - rhs.x , y: lhs.y - rhs.y)
     }
 }

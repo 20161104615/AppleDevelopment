@@ -23,7 +23,7 @@ class ViewController: UIViewController, GameViewDelegate {
         super.viewDidLoad()
         gameView.delegate = self
         DispatchQueue.main.asyncAfter(
-        deadline: .now() + .milliseconds(500)) {
+        deadline: .now() + .milliseconds(10)) {
             self.startGame()
         }
     }
