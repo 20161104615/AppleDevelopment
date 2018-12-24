@@ -8,6 +8,7 @@
 
 import Foundation
 
+//表示四个方向
 enum Direction{
     case left
     case right
@@ -21,7 +22,7 @@ struct Position{
 }
 
 class Game{
-    var size = 0
+    var size = 0//表示一行一列有几个数字
     var isRunning = false
     var goal = 2048
     private var world = [[Card]]()
@@ -56,7 +57,7 @@ class Game{
         return Action.new(at: pool[index], value: value)
     }
     
-    func start(completion: (_ action: [Action]) -> Void){
+    func start(completion: (_ actions: [Action]) -> Void){
         world = getCleanWorld()
         var actions = [Action]()
         actions.append(generateNewCard())

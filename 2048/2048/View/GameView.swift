@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension CGPoint{
+    public static func -(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
+        return CGPoint(x: lhs.x - rhs.x , y: lhs.y - rhs.y)
+    }
+}
+
 protocol GameViewDelegate {
     func slideEnded(offset: CGPoint)
 }
@@ -94,7 +100,7 @@ class GameView: UIView {
             newCardView.creatAnimation()
         }
     }
-    private func moveCard(from: Position, to: Position, completion: (() -> Void)? = nil){
+    private func moveCard(from: Position, to: Position, completion: (() -> Void)? = nil) {
         UIViewPropertyAnimator.runningPropertyAnimator(
             withDuration: 0.06 * Double(max(abs(from.row - to.row), abs(from.col - to.col))),
             delay: 0.0,
@@ -123,6 +129,7 @@ class GameView: UIView {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        检测是否可以滑动
         if !touchingDetectable {
             return
         }
@@ -142,19 +149,13 @@ class GameView: UIView {
                 let endLocation = touch.preciseLocation(in: self)
                 let offset = endLocation - startLocation
                 delegate?.slideEnded(offset: offset)
-            } else{
-                touchingDetectable = true
             }
+        } else{
+            touchingDetectable = true
         }
     }
     
     private func distance(between pointA: CGPoint, and pointB: CGPoint) -> Double {
         return sqrt(Double((pointA.x - pointB.x) * (pointA.x - pointB.x) + (pointA.y - pointB.y) * (pointA.y - pointB.y)))
-    }
-}
-
-extension CGPoint{
-    public static func -(lhs: CGPoint, rhs: CGPoint) -> CGPoint {
-        return CGPoint(x: lhs.x - rhs.x , y: lhs.y - rhs.y)
     }
 }
