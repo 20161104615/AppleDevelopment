@@ -79,10 +79,6 @@ class GameView: UIView {
         }
     }
     
-    private func failure() -> Bool{
-        
-    }
-    
     private func getCardView(at position:Position) -> CardView?{
         return viewWithTag(tag(at: position)) as? CardView
     }
