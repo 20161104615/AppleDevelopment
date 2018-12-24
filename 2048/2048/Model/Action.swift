@@ -12,6 +12,6 @@ enum Action{
     case move(from: Position, to: Position)
     case upgrade(from: Position, to: Position, value: Int)
     case new(at: Position, value: Int)
-    case success
-    case failure
+    case success()
+    case failure()
 }
