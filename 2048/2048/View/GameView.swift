@@ -55,7 +55,7 @@ class GameView: UIView {
     }
     
     override func draw (_ rect: CGRect){
-        UIColor(displayP3Red: 0.8, green: 0.75, blue: 0.71, alpha: 1).setFill()
+        UIColor(displayP3Red: 0.1, green: 0.75, blue: 0.71, alpha: 1).setFill()
         for row in 0..<size {
             for col in 0..<size {
                 let rect = UIBezierPath(roundedRect: getRectOF(row: row, col: col), cornerRadius: 10.0)
