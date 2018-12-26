@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, GameViewDelegate {
+    
+    var page = UIView()
 
     private let size = 4
     private lazy var  game = Game(size: size)
@@ -20,6 +22,7 @@ class ViewController: UIViewController, GameViewDelegate {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         gameView.delegate = self
         DispatchQueue.main.asyncAfter(

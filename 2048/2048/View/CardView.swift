@@ -43,7 +43,7 @@ class CardView: UIView {
 //    初次调用
     private func set(value: Int){
         label.textAlignment = .center
-        label.font  = UIFont.boldSystemFont(ofSize: 38.0)
+        label.font = UIFont.boldSystemFont(ofSize: 38.0)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
         self.addSubview(label)
