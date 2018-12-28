@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var webview: UIWebView!
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var progress: UIProgressView!
-    @IBOutlet weak var url: UITextField!
+//    @IBOutlet weak var webview: UIWebView!
+//    @IBOutlet weak var button: UIButton!
+//    @IBOutlet weak var progress: UIProgressView!
+//    @IBOutlet weak var url: UITextField!
+    
+
     
     
     
