@@ -33,7 +33,7 @@
         <scene sceneID="Rke-PF-Jce">
             <objects>
                 <tableViewController id="EBC-l7-BBP" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1s9-lf-42m">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1s9-lf-42m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,11 +44,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aYe-lm-NvW" id="oSB-Ia-cgU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="主页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7z-fi-90Q">
-                                                    <rect key="frame" x="20" y="11" width="374" height="73"/>
+                                                    <rect key="frame" x="20" y="11" width="128" height="73"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
@@ -56,16 +56,19 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="T8w-Li-YMd" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="8Es-gK-7U0"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="gae-kC-mB0">
                                         <rect key="frame" x="0.0" y="95" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gae-kC-mB0" id="WSB-xX-0N6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第二页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhM-7x-G52">
-                                                    <rect key="frame" x="20" y="20" width="374" height="60"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhM-7x-G52">
+                                                    <rect key="frame" x="20" y="20" width="102" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
@@ -73,16 +76,19 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ghl-iF-iqf" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="uOQ-5w-0Bm"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="mfk-KM-Fxh">
                                         <rect key="frame" x="0.0" y="196" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mfk-KM-Fxh" id="87D-zC-UvU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第三页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-XR-DJG">
-                                                    <rect key="frame" x="20" y="19" width="374" height="60"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下载" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-XR-DJG">
+                                                    <rect key="frame" x="20" y="24" width="84" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
@@ -90,6 +96,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KLQ-lU-udv" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="TxJ-Zn-T4r"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -102,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao3-6q-yt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="0.0"/>
+            <point key="canvasLocation" x="1414" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9lg-6G-CGW">
@@ -118,7 +127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzY-BG-Wn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909" y="-581"/>
+            <point key="canvasLocation" x="2535" y="-731"/>
         </scene>
         <!--主页-->
         <scene sceneID="wOS-mP-U1z">
@@ -129,14 +138,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsE-fN-KOK">
-                                <rect key="frame" x="44" y="102" width="301" height="30"/>
+                                <rect key="frame" x="44" y="98" width="301" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqw-Iq-KJc">
-                                <rect key="frame" x="353" y="102" width="30" height="30"/>
+                                <rect key="frame" x="353" y="98" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ic_radio_button_checked_2x.png"/>
                                 <connections>
@@ -144,12 +153,12 @@
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7bp-Of-eXR">
-                                <rect key="frame" x="0.0" y="150" width="414" height="712"/>
+                                <rect key="frame" x="0.0" y="131" width="414" height="731"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yan-uy-4VM">
-                                <rect key="frame" x="0.0" y="140" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                         </subviews>
@@ -160,7 +169,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_36pt" id="bFc-Hk-fMR"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="bFc-Hk-fMR" id="KNi-LT-UTG"/>
+                        <outlet property="menuButton" destination="bFc-Hk-fMR" id="Up9-me-C3l"/>
                         <outlet property="progress" destination="Yan-uy-4VM" id="fJA-KT-Hbv"/>
                         <outlet property="url" destination="dsE-fN-KOK" id="sQa-nA-OAH"/>
                         <outlet property="webview" destination="7bp-Of-eXR" id="0LF-w2-4ak"/>
@@ -168,11 +177,146 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQe-oJ-1V3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2759" y="-581"/>
+            <point key="canvasLocation" x="3495.652173913044" y="-731.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="270-BP-Xbk">
+            <objects>
+                <navigationController id="ghl-iF-iqf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MeO-z6-o35">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d21-u6-BGU" kind="relationship" relationship="rootViewController" id="gPY-8E-QtU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnW-cl-FV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2536" y="-17"/>
+        </scene>
+        <!--收藏-->
+        <scene sceneID="jFJ-Ul-OzH">
+            <objects>
+                <viewController id="d21-u6-BGU" customClass="ViewController" customModule="TESTBROWSER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1DK-wv-Ars">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIS-xz-NyH">
+                                <rect key="frame" x="44" y="98" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-65-KWp">
+                                <rect key="frame" x="0.0" y="131" width="414" height="731"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WkT-cP-2VS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-c9-C33">
+                                <rect key="frame" x="353" y="98" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ic_radio_button_checked_2x.png"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="d21-u6-BGU" eventType="touchUpInside" id="8rY-tR-iHg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qOR-kz-4zP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="收藏" id="nIE-EE-LXe">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_36pt" id="Rmu-5D-dxv"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Rmu-5D-dxv" id="7ev-Qf-PUj"/>
+                        <outlet property="progress" destination="WkT-cP-2VS" id="dd2-Nj-g4o"/>
+                        <outlet property="url" destination="wIS-xz-NyH" id="S95-es-sGI"/>
+                        <outlet property="webview" destination="Ych-65-KWp" id="kQD-T9-tl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6Q-Vb-Gkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3499" y="-17"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nsb-KS-UWL">
+            <objects>
+                <navigationController id="KLQ-lU-udv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NU9-Hn-8f7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XCI-T6-XXb" kind="relationship" relationship="rootViewController" id="O7v-oN-RJl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xc5-7p-VD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="720"/>
+        </scene>
+        <!--下载-->
+        <scene sceneID="eTj-qD-7wA">
+            <objects>
+                <viewController id="XCI-T6-XXb" customClass="ViewController" customModule="TESTBROWSER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WwN-30-bfI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJh-Vl-qFr">
+                                <rect key="frame" x="44" y="98" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIN-Ob-6A4">
+                                <rect key="frame" x="353" y="98" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ic_radio_button_checked_2x.png"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="XCI-T6-XXb" eventType="touchUpInside" id="0h6-Vh-7Ll"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwE-Sm-zPC">
+                                <rect key="frame" x="0.0" y="131" width="414" height="731"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tqk-Bf-lpa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9zl-q7-U2h"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="下载" id="I8F-ze-YVT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_36pt" id="f9n-YY-qUZ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="f9n-YY-qUZ" id="Flk-Td-5l7"/>
+                        <outlet property="progress" destination="Tqk-Bf-lpa" id="dlO-m8-8LG"/>
+                        <outlet property="url" destination="hJh-Vl-qFr" id="la0-Vl-xaJ"/>
+                        <outlet property="webview" destination="JwE-Sm-zPC" id="epf-bV-FyV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ut-vf-1wu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3496" y="720"/>
         </scene>
     </scenes>
     <resources>
         <image name="ic_menu_36pt" width="72" height="72"/>
         <image name="ic_radio_button_checked_2x.png" width="48" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Es-gK-7U0"/>
+    </inferredMetricsTieBreakers>
 </document>
