@@ -15,12 +15,22 @@ class ViewController: UIViewController,UIWebViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var url: UITextField!
     @IBOutlet weak var webview: UIWebView!
 
+    
+    @IBAction func buttonFlash(_ sender: Any) {
+        webview.reload()
+    }
+    @IBAction func buttonBack(_ sender: Any) {
+        webview.goBack()
+    }
+    @IBAction func buttonGo(_ sender: Any) {
+        webview.goForward()
+    }
     @IBAction func buttonClick(_ sender: Any) {
         _ = 0
         self.webview.loadRequest(NSURLRequest(url: NSURL(string: "http://" + url.text!)! as URL) as URLRequest)
         url!.resignFirstResponder()
         
-        for color in 0...100 {
+        for color in 0...1000 {
             progress.setProgress(Float(color), animated: true)
             progress.progressTintColor = UIColor.init(displayP3Red: 0.9, green: 0.7, blue: 0.7, alpha: 1)
             progress.trackTintColor = UIColor.init(displayP3Red: 0.1, green: 0.7, blue: 0.4, alpha: 1)
