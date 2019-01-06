@@ -25,6 +25,12 @@ class ViewController: UIViewController,UIWebViewDelegate,UITextFieldDelegate {
     @IBAction func buttonGo(_ sender: Any) {
         webview.goForward()
     }
+    
+    @IBAction func buttonStop(_ sender: Any) {
+        webview.stopLoading()
+    }
+    
+    
     @IBAction func buttonClick(_ sender: Any) {
         _ = 0
         self.webview.loadRequest(NSURLRequest(url: NSURL(string: "http://" + url.text!)! as URL) as URLRequest)

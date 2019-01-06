@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F29CC3521E229BD00A78022 /* ic_chevron_left_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F29CC3421E229BD00A78022 /* ic_chevron_left_48pt_2x.png */; };
 		5F29CC3721E22BD700A78022 /* ic_loop_18pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F29CC3621E22BD700A78022 /* ic_loop_18pt_3x.png */; };
+		5F29CC3921E22ECC00A78022 /* ic_clear_18pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F29CC3821E22ECC00A78022 /* ic_clear_18pt_3x.png */; };
 		5F7DCF5A21D6148E00ECBFB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DCF5921D6148E00ECBFB2 /* AppDelegate.swift */; };
 		5F7DCF5C21D6148E00ECBFB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DCF5B21D6148E00ECBFB2 /* ViewController.swift */; };
 		5F7DCF5F21D6148E00ECBFB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7DCF5D21D6148E00ECBFB2 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		5F29CC3421E229BD00A78022 /* ic_chevron_left_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chevron_left_48pt_2x.png; path = "../../../../material-design-icons-3.0.1/navigation/ios/ic_chevron_left_48pt.imageset/ic_chevron_left_48pt_2x.png"; sourceTree = "<group>"; };
 		5F29CC3621E22BD700A78022 /* ic_loop_18pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_loop_18pt_3x.png; path = "../../../../material-design-icons-3.0.1/av/ios/ic_loop_18pt.imageset/ic_loop_18pt_3x.png"; sourceTree = "<group>"; };
+		5F29CC3821E22ECC00A78022 /* ic_clear_18pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_clear_18pt_3x.png; path = "../../../../material-design-icons-3.0.1/content/ios/ic_clear_18pt.imageset/ic_clear_18pt_3x.png"; sourceTree = "<group>"; };
 		5F7DCF5621D6148E00ECBFB2 /* TESTBROWSER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TESTBROWSER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7DCF5921D6148E00ECBFB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7DCF5B21D6148E00ECBFB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		5F7DCF6D21D615C100ECBFB2 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				5F29CC3821E22ECC00A78022 /* ic_clear_18pt_3x.png */,
 				5F29CC3621E22BD700A78022 /* ic_loop_18pt_3x.png */,
 				5F29CC3421E229BD00A78022 /* ic_chevron_left_48pt_2x.png */,
 				5F7DCF7121D6161C00ECBFB2 /* ic_adjust_18pt_3x.png */,
@@ -189,6 +192,7 @@
 				5F7DCF6121D6149000ECBFB2 /* Assets.xcassets in Resources */,
 				5F7DCF5F21D6148E00ECBFB2 /* Main.storyboard in Resources */,
 				5F7DCF7521D6161C00ECBFB2 /* ic_adjust_18pt_3x.png in Resources */,
+				5F29CC3921E22ECC00A78022 /* ic_clear_18pt_3x.png in Resources */,
 				5F7DCF7321D6161C00ECBFB2 /* ic_chevron_right_18pt_3x.png in Resources */,
 				5F7DCF7421D6161C00ECBFB2 /* ic_radio_button_checked_2x.png in Resources */,
 			);

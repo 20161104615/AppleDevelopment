@@ -293,6 +293,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJh-Vl-qFr">
+                                <rect key="frame" x="57" y="98" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIN-Ob-6A4">
                                 <rect key="frame" x="364" y="98" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,13 +317,14 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJh-Vl-qFr">
-                                <rect key="frame" x="57" y="98" width="301" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17H-cD-YlX">
+                                <rect key="frame" x="20" y="98" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <state key="normal" title="Button" image="ic_clear_18pt_3x.png"/>
+                                <connections>
+                                    <action selector="buttonStop:" destination="XCI-T6-XXb" eventType="touchUpInside" id="Ozp-Na-7wM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9zl-q7-U2h"/>
@@ -339,6 +347,7 @@
     <resources>
         <image name="ic_chevron_left_48pt_2x.png" width="96" height="96"/>
         <image name="ic_chevron_right_18pt_3x.png" width="54" height="54"/>
+        <image name="ic_clear_18pt_3x.png" width="54" height="54"/>
         <image name="ic_loop_18pt_3x.png" width="54" height="54"/>
         <image name="ic_menu_36pt" width="72" height="72"/>
         <image name="ic_radio_button_checked_2x.png" width="48" height="48"/>
